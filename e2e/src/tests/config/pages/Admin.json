@@ -1,0 +1,16 @@
+{
+  
+ "AdminUser": "#username",
+  "AdminPassword": "#password",
+  "Login": "#doLogin",
+  "Adminlink": "a.nav-link[href='/admin']",
+  "Logout": "button:has-text('Logout')",
+  "Messageslink": "a:has-text('Messages')",
+  "MessageDialog": "[data-testid='message']",
+  "MessageDialogButtonClose": "button:has-text('Close')",
+  "RestfulBooking": "a:has-text('Restful Booker Platform Demo')",
+  "RestfulBookerPlatformDemo": "a:has-text('Restful Booker Platform Demo')",
+  "Invalidcredentials": "text='Invalid credentials'",
+  "Branding": "#brandingLink",
+  "B&BDetails": "h2:has-text('B&B details')"
+}

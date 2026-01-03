@@ -1,0 +1,12 @@
+{
+  "FirstNameSizeError": "li:has-text('size must be between 3 and 18')",
+  "FirstNameBlankError": "li:has-text('Firstname should not be blank')",
+
+  "LastNameSizeError": "li:has-text('size must be between 3 and 30')",
+  "LastNameBlankError": "li:has-text('Lastname should not be blank')",
+
+  "PhoneNumberSizeError": "li:has-text('size must be between 11 and 21')",
+  "EmailFormatError": "li:has-text('must be a well-formed email address')",
+
+  "NonEmptyFieldError": "li:has-text('must not be empty')"
+}

@@ -1,0 +1,14 @@
+ {
+
+
+  "LocationPageTitle": "h2:has-text('Our Location')",
+  "LocationMenu": "a:has-text('Location')",
+  "BBOurLocation": "h3:has-text('Our Location')",
+  "BBAddress": "p:has-text('Shady Meadows')",
+  "BBPhone": "p:has-text('012345678901')",
+  "BBContactEmail": "p:has-text('fake@fakeemail.com')",
+  "BBDirections": "p:has-text('Welcome to Shady Meadows')"
+
+
+ }
+     

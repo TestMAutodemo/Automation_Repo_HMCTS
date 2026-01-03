@@ -1,0 +1,30 @@
+{
+  "cucumberautocomplete.steps": ["./**/src/main/step-definitions/**/*.ts"],
+  "cucumberautocomplete.syncfeatures": "./**/src/features/*.feature",
+  "cSpell.words": [
+    "anajemba",
+    "behaviour",
+    "carehomes",
+    "colour",
+    "ctsa",
+    "domcontentloaded",
+    "endregion",
+    "Ensuite",
+    "exceljs",
+    "filechooser",
+    "listitem",
+    "msedge",
+    "ABC",
+    "networkidle",
+    "OPCS",
+    "OPTICA",
+    "organisation",
+    "organisations",
+    "otplib",
+    "postcucumber",
+    "precucumber",
+    "productionenvironment",
+    "recaptcha",
+    "testenvironment"
+  ]
+}

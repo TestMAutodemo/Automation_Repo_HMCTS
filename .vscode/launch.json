@@ -1,0 +1,62 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Local Unit Tests",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/e2e",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-Command", ".\\run_test.bat localhost unit"],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "name": "Run Local Smoke Tests",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/e2e",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-Command", ".\\run_test.bat localhost smoke"],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "name": "Scrape Tests",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/e2e",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-Command", ".\\run_test.bat localhost scrape"],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "name": "Run Production Regression Tests",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/e2e",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-Command", ".\\run_test.bat production regression"],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "name": "Run Production Unit Tests",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/e2e",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-Command", ".\\run_test.bat production unit"],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "name": "Run Production Smoke Tests",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/e2e",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-Command", ".\\run_test.bat production smoke"],
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ]
+}

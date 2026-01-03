@@ -1,0 +1,15 @@
+{
+"CalendarPicker": "form div:has(.rbc-calendar) .rbc-calendar",
+  "CalDateSelector": ".rbc-date-cell",
+  "Booking": "a:has-text('Booking')",
+  "BookNow": "a:has-text('Book now')",
+  "ReserveNow": "button:has-text('Reserve Now')",
+  "firstname": "input[name='firstname']",
+  "lastname": "input[name='lastname']",
+  "email": "input[name='email']",
+  "phone": "input[name='phone']",
+  "BookingConfirmedHeading": "h2:has-text('Booking Confirmed')",
+  "SuccessMsg": "text='Booking Confirmed'",
+  "FailureMsg": "text='Application error: a client-side exception has occurred while loading automationintesting.online'"
+}
+
