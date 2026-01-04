@@ -70,7 +70,7 @@ INSTALLATION STEPS
 
 &nbsp;  git clone <repository\_url>
 
-&nbsp;  ex: git clone https://github.com/TestMAutodemo/Automation_Repo_HMCTS
+&nbsp;  ex: git clone https://github.com/TestMAutodemo/Automation_Repo_HMCTS.git
 
 
 
