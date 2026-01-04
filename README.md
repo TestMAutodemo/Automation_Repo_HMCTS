@@ -42,7 +42,7 @@ PREREQUISITES
 
 \- Visual Studio Code
 
-
+**Warning**: Node.js 18 LTS is used as newer LTS Node versions require Visual Studio C++ build tools that are not fully compatible with the currently available Visual Studio Community edition and may introduce issues when installing native dependencies.
 
 Optional VS Code Extensions:
 
@@ -104,7 +104,7 @@ INSTALLATION STEPS
 
 
 
-&nbsp;   cd  Automation\_Repo\_HMCTS/Assignment/e2e
+&nbsp;   cd  Automation_Repo_HMCTS/e2e
 
 
 
@@ -133,7 +133,7 @@ NOTE: All commands must be run from the e2e directory from either powershell or 
 
 Smoke Tests:
 
-.\\run\_test.bat localhost smoke
+./run_test.bat localhostt smoke
 
 OR
 
@@ -143,7 +143,7 @@ npm run cucumber:localhost -- --tags "@smoke"
 
 API Tests:
 
-.\\run\_test.bat localhost api
+./run_test.bat localhost api
 
 OR
 
@@ -153,7 +153,7 @@ npm run cucumber:localhost -- --tags "@api"
 
 Accessibility Tests:
 
-.\\run\_test.bat localhost a11y
+./run_test.bat localhost a11y
 
 OR
 
@@ -166,60 +166,26 @@ npm run cucumber:localhost -- --tags "@a11y"
 
 
 ENVIRONMENT VARIABLES (SECRETS)
+This framework uses environment variables to manage sensitive values such as admin credentials, OTP secrets, and API keys. Feature files reference these values using tokens, for example:
 
--------------------------------
+env:ADMIN_USERNAME
 
-This framework uses environment variables for any sensitive values (e.g. admin username,
+env:ADMIN_PASSWORD
 
-password, OTP secret, API keys). Feature files reference these using tokens like:
+env:ADMIN_OTP_SECRET
 
-
-
-&nbsp; env:ADMIN\_USERNAME
-
-&nbsp; env:ADMIN\_PASSWORD
-
-&nbsp; env:ADMIN\_OTP\_SECRET
-
-
+Environment values are resolved at runtime from environment-specific configuration files.
 
 Note:
+For demonstration purposes, this repository includes a preconfigured localhost.env file to support local execution against a public test application. No additional setup is required to run the tests locally.
 
-The repository does not contain any valid usernames or passwords.
+In real-world projects:
 
-Valid login scenarios are included solely to demonstrate how secure
+Environment files such as localhost.env must not be committed to source control
 
-credential handling is implemented. Reviewers are not expected to
+Only template files (for example localhost.env.example) with placeholder values should be committed
 
-execute these scenarios and can run all other tests without secrets.
-
-
-
-Local runs:
-
-\- Create the file: e2e/src/main/env/localhost.env
-
-\- Add values such as:
-
-&nbsp;   ADMIN\_USERNAME=<value>
-
-&nbsp;   ADMIN\_PASSWORD=<value>
-
-&nbsp;   ADMIN\_OTP\_SECRET=<value>
-
-
-
-
-
-
-
-IMPORTANT:
-
-\- Do NOT commit localhost.env or any \*.env files containing secrets.
-
-\- Only commit a template file (e.g. localhost.env.example) with blank values.
-
-
+Sensitive values should be supplied via secure environment configuration or CI/CD secret management solutions
 
 CI runs:
 
