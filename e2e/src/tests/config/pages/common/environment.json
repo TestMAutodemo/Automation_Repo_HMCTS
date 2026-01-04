@@ -1,0 +1,6 @@
+{
+  "care find dev": "https://ctpp-dev-uks-app.azurewebsites.net",
+  "care find test": "https://ctpp-test-uks-app.azurewebsites.net",
+  "capacity tracker dev": "https://captrack-dev-app.capacitytracker.co.uk",
+  "capacity tracker test": "https://captrack-test-app.capacitytracker.co.uk"
+}

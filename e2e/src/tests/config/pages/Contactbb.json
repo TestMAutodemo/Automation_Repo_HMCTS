@@ -1,0 +1,18 @@
+{
+
+  "Submit": "button:has-text('Submit')",
+  "ContactMenu": "a:has-text('Contact')",
+  "CustomerName": "#name",
+  "CustomerEmail": "#email",
+  "CustomerPhone": "#phone",
+  "Subject": "#subject",
+  "MsgDescription": "#description",
+  "SendMessagePageTitle": "h3:has-text('Send Us a Message')",
+  "ThanksMessage": "h3:has-text('Thanks for getting in touch')",
+  "LocationMenu": "a:has-text('Location')",
+  "BBOurLocation": "h3:has-text('Our Location')",
+  "BBAddress": "p:has-text('Shady Meadows B&B')",
+  "BBPhone": "p:has-text('012345678901')",
+  "BBContactEmail": "p:has-text('fake@fakeemail.com')",
+  "BBDirections": "p:has-text('Welcome to Shady Meadows')"
+}

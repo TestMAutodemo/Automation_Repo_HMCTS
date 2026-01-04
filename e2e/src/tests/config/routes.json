@@ -1,0 +1,67 @@
+{    
+    "home": {
+      "route": "/",
+      "regex": "^/"
+    },
+
+   
+    "logout": {
+      "route": "/Logout?",
+      "regex": "^/Logout?"
+    },
+  
+        
+  "search Result": {
+    "route": "/Search/Results",
+    "regex": "^/Search/Results"
+  },
+
+  "Identity AccountManage": {
+    "route": "/Manage",
+    "regex": "^/Manage"
+  },
+
+  "contact": {
+    "route": "/contact",
+    "regex": "^/#contact"
+  },
+
+  "booking": {
+    "route": "/#booking",
+    "regex": "^/booking"
+  },
+
+  "reservation": {
+  "route": "/reservation",
+    "regex": "^/reservation"
+  },
+
+ "rooms": {
+  "route": "/rooms",
+    "regex": "^/rooms"
+  },
+
+     "message": {
+  "route": "/message",
+  "regex": "^/message"
+  },
+
+"admin": {
+  "route": "/admin",
+  "regex": "^/admin"
+  },
+
+  "location": {
+  "route": "/#location",
+  "regex": "^/location"
+  },
+
+  "branding": {
+  "route": "/#branding",
+  "regex": "^/branding"
+  }
+
+}
+
+   
+
