@@ -127,15 +127,15 @@ RUNNING TESTS
 
 -------------
 
-NOTE: All commands must be run from the e2e directory from either powershell or doscommand or VisualCode terminal.
+NOTE: All commands must be run from the e2e directory from either powershell or dos command or VisualCode terminal.
 
 
 
 Smoke Tests:
+Command to run from PowerShell
+./run_test.bat localhost smoke
 
-./run_test.bat localhostt smoke(powershell)
-
-**Note:** If you are executing above command in **command prompt** it should be .\run_test.bat localhost smoke or run_test.bat localhost smoke
+**Note:** If you are executing above command in ** Window command prompt** it should be .\run_test.bat localhost smoke or run_test.bat localhost smoke
 
 OR
 
@@ -144,8 +144,8 @@ npm run cucumber:localhost -- --tags "@smoke"
 
 
 API Tests:
-
-./run_test.bat localhost api(powershell)
+**Command to run from PowerShell**
+./run_test.bat localhost api
 
 OR
 
@@ -154,8 +154,8 @@ npm run cucumber:localhost -- --tags "@api"
 
 
 Accessibility Tests:
-
-./run_test.bat localhost a11y(powershell)
+**Command to run from PowerShell**
+./run_test.bat localhost a11y
 
 OR
 
